@@ -1,0 +1,14 @@
+select convert(varchar, dato, 23), film, sal, land, imdblink,
+ iif(stig is null, 0, stig),
+ iif(paal is null, 0, paal),
+ iif(terjeb is null, 0, terjeb),
+ iif(tor is null, 0, tor),
+ iif(tom is null, 0, tom),
+ iif(eivind is null, 0, eivind),
+ iif(olav is null, 0, olav),
+ iif(finn is null, 0, finn),
+ iif(molde is null, 0, molde),
+ iif(pallen is null, 0, pallen),
+ iif(swing_stig is null, 0, swing_stig),
+ iif(bengt is null, 0, bengt)
+from torsdagskino.dbo.filmlogg
